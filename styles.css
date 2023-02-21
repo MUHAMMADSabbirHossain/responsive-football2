@@ -26,6 +26,7 @@ button {
     justify-content: center;
     align-items: center;
     border: 0;
+    transition: transform .5s, border-radius .5s;
 }
 
 .button-title,
@@ -33,6 +34,15 @@ button {
     padding: 0 8px;
 }
 
+button:hover {
+    transform: scale(1.20);
+    border-radius: 10px;
+}
+
+button:active {
+    box-shadow: 0px 0px 10px #ffffff23;
+    transform: scale(1.05);
+}
 
 /* header section  */
 header {
@@ -169,7 +179,7 @@ footer {
     align-items: center;
 }
 
-.web-logo {
+.web-logo img {
     width: 484px;
     height: 110px;
 }
@@ -184,4 +194,395 @@ footer {
 .linked-logo {
     margin-top: 20px;
     font-size: 18px;
+}
+
+
+
+/* --------------------------------------
+                 media qurey            
+-----------------------------------------*/
+
+
+/* mobile media quary */
+@media only screen and (max-width: 600px) {
+
+    /* commmon and utilites */
+    h1 {
+        font-weight: 700;
+        /* font-size: 64px; */
+        line-height: 80px;
+        /* margin: 46.13px 0 30px 0; */
+        color: #FFFFFF;
+        font-size: 36px;
+        margin: 0 0 30px 0;
+
+    }
+
+    /* button of website */
+    button {
+        background: #E02C6D;
+        padding: 10px 24px;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        margin-bottom: 50px;
+    }
+
+    .button-title,
+    .button-logo {
+        padding: 0 8px;
+    }
+
+
+
+    /* header section  */
+    header {
+        width: 100%;
+        height: 677px;
+        background-color: #2D25A0;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
+    .banner {
+        /* width: 1163px; */
+        width: 100%;
+    }
+
+    /* menu of website */
+    .banner-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 33px 0 46.12px 0; */
+        margin: 33px 0 0 0;
+
+
+    }
+
+    .menu-left ul {
+        /* display: flex; */
+        display: none;
+        padding: 0;
+    }
+
+    .menu-left li {
+        list-style: none;
+        margin-right: 36px;
+    }
+
+    /* .menu-left li a {
+        color: #FFFFFF;
+        text-decoration: none;
+    } */
+
+
+    /* banner details */
+    .copa-america {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding-bottom: 86px;
+        margin-left: 16px;
+    }
+
+
+    .copa-image img {
+        /* width: 556.01px;
+        height: 438px; */
+        width: 329px;
+        height: 259.17px;
+    }
+
+
+    /* players card */
+    .players {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 27px 30px;
+    }
+
+
+
+    /* top news section */
+
+    .news {
+        /* width: 1163px; */
+        /* margin-top: 165px; */
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0px;
+        width: 100%;
+    }
+
+    .news-article {
+        padding: 0 15px;
+    }
+
+    .odd {
+        /* margin-right: 66px; */
+        margin: 0;
+    }
+
+    .news-article h2 {
+        /* font-size: 48px; */
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .news-article p {
+        margin-bottom: 34px;
+    }
+
+    .news-image img {
+        /* width: 567px;
+        height: 427px; */
+        width: 328px;
+        height: 248px;
+    }
+
+    .even {
+        /* margin-left: 66px; */
+        margin: 0;
+    }
+
+    .top-news .news:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+
+
+    /* footer section */
+    footer {
+        /* margin-top: 158px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 43px 0 187px 0;
+    }
+
+    .web-logo img {
+        /* width: 484px;
+        height: 110px; */
+        width: 271px;
+        height: 63px;
+    }
+
+    .linked-logo a {
+        font-size: 26px;
+        margin: 0 5px;
+        color: #d6d6d6;
+    }
+
+    .copyright-section h4,
+    .linked-logo {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+}
+
+
+
+/* tablet and pad media quary */
+@media only screen and (max-width: 992px) {
+
+
+    /* commmon and utilites */
+    h1 {
+        font-weight: 700;
+        /* font-size: 64px; */
+        line-height: 80px;
+        /* margin: 46.13px 0 30px 0; */
+        color: #FFFFFF;
+        font-size: 36px;
+        margin: 0 0 30px 0;
+
+    }
+
+    /* button of website */
+    button {
+        background: #E02C6D;
+        padding: 10px 24px;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        margin-bottom: 50px;
+    }
+
+    .button-title,
+    .button-logo {
+        padding: 0 8px;
+    }
+
+
+
+    /* header section  */
+    header {
+        width: 100%;
+        height: 677px;
+        background-color: #2D25A0;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+
+    .banner {
+        /* width: 1163px; */
+        width: 100%;
+    }
+
+    /* menu of website */
+    .banner-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 33px 0 46.12px 0; */
+        margin: 33px 0 0 0;
+
+
+    }
+
+    .menu-left ul {
+        /* display: flex; */
+        display: none;
+        padding: 0;
+    }
+
+    .menu-left li {
+        list-style: none;
+        margin-right: 36px;
+    }
+
+    /* .menu-left li a {
+        color: #FFFFFF;
+        text-decoration: none;
+    } */
+
+
+    /* banner details */
+    .copa-america {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding-bottom: 86px;
+        /* margin-left: 16px; */
+        margin: 0 16px;
+
+    }
+
+
+    .copa-image img {
+        width: 556.01px;
+        height: 438px;
+        /* width: 329px;
+        height: 259.17px; */
+    }
+
+
+    /* players card */
+    .players {
+        margin-top: 70px;
+        display: grid;
+        /* grid-template-columns: repeat(1, 1fr); */
+        grid-gap: 27px 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    /* top news section */
+
+    .news {
+        /* width: 1163px; */
+        /* margin-top: 165px; */
+        display: flex;
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        align-items: center;
+        margin: 60px 0px;
+        width: 100%;
+    }
+
+    .news-article {
+        padding: 0 15px;
+    }
+
+    .odd {
+        /* margin-right: 66px; */
+        margin: 0;
+    }
+
+    .news-article h2 {
+        /* font-size: 48px; */
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .news-article p {
+        margin-bottom: 34px;
+    }
+
+    .news-image img {
+        /* width: 567px;
+        height: 427px; */
+        width: 328px;
+        height: 248px;
+        margin-right: 15px;
+    }
+
+    .even {
+        /* margin-left: 66px; */
+        margin: 0;
+    }
+
+    /* .top-news .news:nth-child(even) {
+        flex-direction: column-reverse;
+    } */
+
+
+
+    /* footer section */
+    footer {
+        /* margin-top: 158px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 43px 0 187px 0;
+    }
+
+    .web-logo img {
+        /* width: 484px;
+        height: 110px; */
+        width: 271px;
+        height: 63px;
+    }
+
+    .linked-logo a {
+        font-size: 26px;
+        margin: 0 5px;
+        color: #d6d6d6;
+    }
+
+    .copyright-section h4,
+    .linked-logo {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+
 }
